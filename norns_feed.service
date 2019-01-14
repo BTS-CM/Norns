@@ -10,3 +10,6 @@ Environment="PATH=/home/username/HUG/bin/"
 ExecStart=/home/username/HUG/bin/python3 /home/username/Norns/parallel_feed.py
 Restart=on-failure
 RestartSec=15
+
+[Install]
+WantedBy=multi-user.target
