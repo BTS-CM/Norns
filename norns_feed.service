@@ -1,0 +1,12 @@
+[Unit]
+Description=Norns price feed script service
+
+[Service]
+PIDFile=/home/username/Norns/pid
+User=username
+Group=www-data
+WorkingDirectory=/home/username/Norns/
+Environment="PATH=/home/username/HUG/bin/"
+ExecStart=/home/username/HUG/bin/python3 /home/username/Norns/parallel_feed.py
+Restart=on-failure
+RestartSec=15
