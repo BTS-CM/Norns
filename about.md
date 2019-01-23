@@ -4,11 +4,11 @@ The Norns are a set of three Algorithm Based Assets issued on the Bitshares Dece
 
 # Background
 
-Bitshares (BTS) is a decentralized exchange (DEX) which operates on a Graphene toolkit based blockchain, we're interested in the smartcoin functionality available on the BTS DEX.
+The BitShares Blockchain is an industrial-grade decentralized platform built for high-performance financial smart contracts. It represents the first decentralized autonomous community that lets its core token holder decide on its future direction and products by means of on-chain voting. The core token is BTS and it is used to realize the built-in SmartCoins, which are of interested to us in this article.
 
-Smartcoins on the BTS DEX are decentralized [Market Pegged Assets](https://how.bitshares.works/en/master/bts_holders/tokens/mpa.html), they're typically pegged to an external asset's value (such as USD, CNY, EUR) and have provable backing collateral on the blockchain (typically 170%+ BTS collateral). Multiple feed producers (witnesses, committee or private feed publishers) provide a set of price feeds, from which the BTS DEX establishes the MPA's settlement value as the median of this set of feeds.
+Smartcoins on the Bitshares platform are decentralized [Market Pegged Assets](https://how.bitshares.works/en/master/bts_holders/tokens/mpa.html), they're typically pegged to an external asset's value (such as USD, CNY, EUR) and have provable backing collateral on the blockchain (typically 170%+ BTS collateral). Multiple feed producers (witnesses, committee or private feed publishers) provide a set of price feeds, from which the Bitshares platform establishes the MPA's settlement value as the median of this set of feeds.
 
-[Hertz](https://bitsharescan.com/asset/HERTZ) was the first oscillating Algorithm Based Asset (ABA) created on the BTS DEX. It has an amplitude of 14%, a period of 28 days and has a base reference asset value of $1.00, resulting in a price feed range of $0.86 to $1.14. Despite multiple successful oscillations, its' supply has failed to grow past 4 figures potentially due to users lack of confidence in the external USD asset peg or due to the recent global settlement of bitUSD on the BTS DEX.
+[Hertz](https://bitsharescan.com/asset/HERTZ) was the first oscillating Algorithm Based Asset (ABA) created on the Bitshares platform. It has an amplitude of 14%, a period of 28 days and has a base reference asset value of $1.00, resulting in a price feed range of $0.86 to $1.14. Despite multiple successful oscillations, its' supply has failed to grow past 4 figures potentially due to users lack of confidence in the external USD asset peg or due to the recent global settlement of bitUSD on the Bitshares platform.
 
 With lessons learned from Hertz, the external USD asset peg was abandoned so as to appeal to a global audience and to reduce the risk of global settlement occuring. Rather than simply mimicking Hertz without the external asset peg, a three phase offset set of ABAs was proposed to investigate the resulting market behaviour associated with
 
@@ -22,7 +22,7 @@ Verthandi, named after [Verðandi](https://en.wikipedia.org/wiki/Ver%C3%B0andi) 
 
 Skuld, named after [Skuld](https://en.wikipedia.org/wiki/Skuld) (future/debt) is the third phase offset ABA.
 
-All three mythological entities use the character "[ð](https://en.wikipedia.org/wiki/Eth)" however this character isn't supported by the BTS DEX so the modern English language equivalent of "th" was chosen over "d" to substitute "ð".
+All three mythological entities use the character "[ð](https://en.wikipedia.org/wiki/Eth)" however this character isn't supported by the Bitshares platform so the modern English language equivalent of "th" was chosen over "d" to substitute "ð".
 
 ## Why an amplitude of 12.612612612% ?
 
@@ -60,4 +60,4 @@ The following Norn price feed visualization was produced in the '[Simulator.xlsx
 
 # Conclusion
 
-The Norns are an unique asset which will ideally operate forever on the BTS DEX without any centralized influence. Once 7 price feed publishers begin providing feeds it will become active for trading on the BTS DEX. Hopefully this will be more successful than Hertz and will attract new users to Bitshares and possibly inspire similar ABAs to be created in the future.
+The Norns are an unique asset which will ideally operate forever on the Bitshares platform without any centralized influence. Once 7 price feed publishers begin providing feeds it will become active for trading on the Bitshares platform. Hopefully this will be more successful than Hertz and will attract new users to Bitshares and possibly inspire similar ABAs to be created in the future.
