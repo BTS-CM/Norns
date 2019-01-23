@@ -35,9 +35,10 @@ def multi_feed(target_name, phase_offset, past_value):
 		)
 
 	previously_published_value = past_value[target_name]
-	#print(target_name + " init: " + str(previously_published_value) + " now: " + str(asset_value))
 
-	if (math.fabs(asset_value - previously_published_value) > 0.00001):
+	min_price_feed_difference = 0.00001 # Default set to the lowest decimal place, increase to reduce frequency of publishing feeds
+
+	if (math.fabs(asset_value - previously_published_value) > min_price_feed_difference):
 		past_value[target_name] = asset_value # Overwrite the target_name asset's 'past value' for comparison next block
 		wallet_password = "LOCAL_WALLET_PASSWORD" # Replace with your price feed wallet's password
 		target_pair = "BTS/"+str(target_name)
