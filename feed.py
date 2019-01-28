@@ -24,7 +24,7 @@ def publish_wyrd(block_param):
 	current_timestamp = pendulum.now().timestamp()
 
 	urthr_value = norn_feed(
-		0.12612612612, # amplitude
+		0.05303030303, # amplitude
 		reference_timestamp,
 		current_timestamp,
 		86400 * 28, # period
@@ -33,7 +33,7 @@ def publish_wyrd(block_param):
 	print("urthr value established")
 
 	verthandi_value = norn_feed(
-		0.12612612612, # amplitude
+		0.05303030303, # amplitude
 		reference_timestamp,
 		current_timestamp,
 		86400 * 28, # period
@@ -42,7 +42,7 @@ def publish_wyrd(block_param):
 	print("verthandi value established")
 
 	skuld_value = norn_feed(
-		0.12612612612, # amplitude
+		0.05303030303, # amplitude
 		reference_timestamp,
 		current_timestamp,
 		86400 * 28, # period

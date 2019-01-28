@@ -27,7 +27,7 @@ def multi_feed(target_name, phase_offset, past_value):
 	current_timestamp = pendulum.now().timestamp()
 
 	asset_value = norn_feed(
-		0.12612612612, # amplitude
+		0.05303030303, # amplitude
 		reference_timestamp,
 		current_timestamp,
 		86400 * 28, # period
@@ -74,7 +74,8 @@ def publish_wyrd(block_param):
 
 if __name__ == "__main__":
 	"""
-	Script starts here. Change the node list to
+	Script starts here.
+	Change the node list at your own discretion
 	"""
 	print("Started")
 	full_node_list = [

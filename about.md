@@ -1,6 +1,6 @@
 # Abstract
 
-The Norns are a set of three Algorithm Based Assets issued on the Bitshares Decentralized Exchange. They use Bitshares as collateral, reference an oscillating quantity of Bitshares, are 120 degrees offset from one another and have an approximate amplitude of 12.612% over a 28 day period.
+The Norns are a set of three Algorithm Based Assets issued on the Bitshares Decentralized Exchange. They use Bitshares as collateral, reference an oscillating quantity of Bitshares, are 120 degrees offset from one another and have an approximate amplitude of 5.303% over a 28 day period.
 
 # Background
 
@@ -10,7 +10,7 @@ Smartcoins on the Bitshares platform are decentralized [Market Pegged Assets](ht
 
 [Hertz](https://bitsharescan.com/asset/HERTZ) was the first oscillating Algorithm Based Asset (ABA) created on the Bitshares platform. It has an amplitude of 14%, a period of 28 days and has a base reference asset value of $1.00, resulting in a price feed range of $0.86 to $1.14. Despite multiple successful oscillations, its' supply has failed to grow past 4 figures potentially due to users lack of confidence in the external USD asset peg or due to the recent global settlement of bitUSD on the Bitshares platform.
 
-With lessons learned from Hertz, the external USD asset peg was abandoned so as to appeal to a global audience and to reduce the risk of global settlement occuring. Rather than simply mimicking Hertz without the external asset peg, a three phase offset set of ABAs was proposed to investigate the resulting market behaviour associated with
+With lessons learned from Hertz, the external USD asset peg was abandoned so as to appeal to a global audience and to reduce the risk of global settlement occurring. Rather than simply mimicking Hertz without the external asset peg, a three phase offset set of ABAs was proposed to investigate the resulting market behaviors between the three assets throughout their oscillations.
 
 # About the Norns
 
@@ -24,9 +24,13 @@ Skuld, named after [Skuld](https://en.wikipedia.org/wiki/Skuld) (future/debt) is
 
 All three mythological entities use the character "[ð](https://en.wikipedia.org/wiki/Eth)" however this character isn't supported by the Bitshares platform so the modern English language equivalent of "th" was chosen over "d" to substitute "ð".
 
-## Why an amplitude of 12.612612612% ?
+## Why an amplitude of 5.303030303% ?
 
-In the UK, a maximum of 0.8% per day 'interest' is enforced on loans; whilst the Norns potentially do not fall under jurisdiction of such regulations, the decision was made to pre-emptively adhere to these UK regulations so that no amplitude migration would be potentially required in the future. An amplitude of 12.612612612% results in just under 0.8% per day increase from trough to peak.
+In the UK, a maximum of 0.8% per day 'interest' is enforced on loans; whilst the Norns potentially do not fall under jurisdiction of such regulations, the decision was made to preemptively adhere to these UK regulations so that no amplitude migration would be potentially required in the future. An amplitude of 5.303030303% results in just under 0.8% per day increase from trough to peak.
+
+Peak value: `1 + (5.303030303/100)` = 1.05303030303
+Trough value: `1 - (5.303030303/100)` = 0.94696969697
+Daily rate: `(((Peak/Trough)-1)/14)*100` = 0.8
 
 ## 13 months in a year?
 
@@ -54,9 +58,9 @@ The following flags remain:
 
 ## Visualization
 
-The following Norn price feed visualization was produced in the '[Simulator.xlsx](https://github.com/BTS-CM/Norns/blob/master/Simulator.xlsx)' spreadsheet, it can be used to experiment with different variables and for producing future
+The following Norn price feed visualization was produced in the '[Simulator.xlsx](https://github.com/BTS-CM/Norns/blob/master/Simulator.xlsx)' spreadsheet, it can be used to experiment with different variables and for producing future values.
 
-<img src="https://i.imgur.com/Ut4mJMf.png" alt="Norn chart" />
+<img src="https://i.imgur.com/XUiMWtl.png" alt="Norn chart" />
 
 # Conclusion
 
