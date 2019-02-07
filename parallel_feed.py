@@ -79,10 +79,23 @@ if __name__ == "__main__":
 	"""
 	print("Started")
 	full_node_list = [
-		"wss://eu.nodes.bitshares.works", #location: "Central Europe - BitShares Infrastructure Program"
-		"wss://bitshares.crypto.fans/ws", #location: "Munich, Germany"
-		"wss://api.bts.blckchnd.com" #location: "Falkenstein, Germany"
-		"wss://dex.rnglab.org", #location: "Netherlands"
+		"wss://eu.nodes.bitshares.ws", # Central Europe
+		"wss://us.nodes.bitshares.ws", # U.S. West Coast
+		"wss://sg.nodes.bitshares.ws", # Singapore
+		"wss://bitshares.crypto.fans/ws", # Munich, Germany
+		"wss://bit.btsabc.org/ws", # Hong Kong
+		"wss://api.bts.blckchnd.com" # Falkenstein, Germany
+		"wss://openledger.hk/ws", # Hong Kong
+		"wss://bitshares.openledger.info/ws",
+		"wss://bitshares-api.wancloud.io/ws", # China
+		"wss://dex.rnglab.org", # Netherlands
+		"wss://dexnode.net/ws", # Dallas, USA
+		"wss://kc-us-dex.xeldal.com/ws", # Kansas City, USA
+		"wss://la.dexnode.net/ws", # Los Angeles, USA
+		"wss://citadel.li/node", # Iceland - Reykjavik
+		"wss://bts.proxyhosts.info/wss", # Germany
+		"wss://api.dex.trading/", # France - Paris
+		"wss://api.open-asset.tech/ws" # Germany - Frankfurt
 	]
 
 	ws = BitSharesWebsocket(

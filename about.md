@@ -49,12 +49,13 @@ To improve trustworthiness, the following unnecessary centralized asset-owner pe
 * “Issuer must approve all transfers”: Transfers will never require approval.
 * “Disable confidential transactions”: Confidential transactions (whenever implemented) will always be allowed.
 * "Disable force settlement": I'm unable to disable force settlement, if you don't want force settlement you should use an UIA.
+* "Charge market fee" - There are no market fees.
 
 The following flags remain:
 
-* "Charge market fee" - There are no market fees imposed, this may be surrendered in the future however it could be a source of market making revenue in the future and will remain available until a future date.
-* "Allow issuer to force a global settlement" - This is [currently impossible to disable](https://github.com/bitshares/bitshares-ui/issues/2043). Once it's possible, it'll be disabled.
-* "Witness fed asset" - Currently a private price feed publisher list is configured so that the 'hertz-feed; account is able to publish feeds without being a witness. In the future if I have to step aside this will be enabled.
+
+* "Allow issuer to force a global settlement" - Removal [was delayed due to an issue](https://github.com/bitshares/bitshares-ui/issues/2043). It'll be disabled in the near future.
+* "Witness fed asset" - Currently a private price feed publisher list is configured so that the 'hertz-fee' account is able to publish feeds without being a witness. In the future if I have to step aside this will be enabled.
 
 ## Visualization
 
@@ -62,6 +63,11 @@ The following Norn price feed visualization was produced in the '[Simulator.xlsx
 
 <img src="https://i.imgur.com/XUiMWtl.png" alt="Norn chart" />
 
+## Price feeds
+
+* [Parallel feed](https://github.com/BTS-CM/Norns/blob/master/parallel_feed.py)
+* [Zapata's bitshares-pricefeed fork](https://github.com/Zapata/bitshares-pricefeed/blob/develop/bitshares_pricefeed/sources/norm.py)
+
 # Conclusion
 
-The Norns are an unique asset which will ideally operate forever on the Bitshares platform without any centralized influence. Once 7 price feed publishers begin providing feeds it will become active for trading on the Bitshares platform. Hopefully this will be more successful than Hertz and will attract new users to Bitshares and possibly inspire similar ABAs to be created in the future.
+The Norns are unique assets which will ideally operate forever on the Bitshares platform without any centralized influence. Once 7 price feed publishers begin providing feeds it will become active for trading on the Bitshares platform. Hopefully this will be more successful than Hertz and will attract new users to Bitshares and possibly inspire similar ABAs to be created in the future.
