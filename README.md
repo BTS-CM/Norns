@@ -83,3 +83,18 @@ sudo systemctl daemon-reload
 sudo systemctl enable norns_feed.service
 sudo systemctl start norns_feed.service
 ```
+
+#### Debugging your price feed
+
+If you're experiencing issues with the price feed, run the following command to get a debug error log output:
+```
+sudo systemctl status norns_feed.service
+```
+
+Report any errors to this github, or on the Telegram channel.
+
+You could try the following commands to reset the service:
+```
+sudo systemctl daemon-reload
+sudo systemctl restart norns_feed.service
+```
