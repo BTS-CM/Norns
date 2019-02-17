@@ -26,7 +26,7 @@ All three mythological entities use the character "[ð](https://en.wikipedia.org
 
 ## Why an amplitude of 5.303030303% ?
 
-In the UK, a maximum of 0.8% per day 'interest' is enforced on loans; whilst the Norns potentially do not fall under jurisdiction of such regulations, the decision was made to preemptively adhere to these UK regulations so that no amplitude migration would be potentially required in the future. An amplitude of 5.303030303% results in just under 0.8% per day increase from trough to peak.
+In the UK, a maximum of 0.8% per day 'interest' is enforced on loans; whilst the Norns potentially do not fall under jurisdiction of such regulations, the decision was made to pre-emptively adhere to these UK regulations so that no amplitude migration would be potentially required in the future. An amplitude of 5.303030303% results in just under 0.8% per day increase from trough to peak.
 
 Peak value: `1 + (5.303030303/100)` = 1.05303030303
 Trough value: `1 - (5.303030303/100)` = 0.94696969697
@@ -50,12 +50,11 @@ To improve trustworthiness, the following unnecessary centralized asset-owner pe
 * “Disable confidential transactions”: Confidential transactions (whenever implemented) will always be allowed.
 * "Disable force settlement": I'm unable to disable force settlement, if you don't want force settlement you should use an UIA.
 * "Charge market fee" - There are no market fees.
+* "Allow issuer to force a global settlement" - It's impossible for the 'issuer' (account with asset owner permissions) to force a global settlement.
 
 The following flags remain:
 
-
-* "Allow issuer to force a global settlement" - Removal [was delayed due to an issue](https://github.com/bitshares/bitshares-ui/issues/2043). It'll be disabled in the near future.
-* "Witness fed asset" - Currently a private price feed publisher list is configured so that the 'hertz-fee' account is able to publish feeds without being a witness. In the future if I have to step aside this will be enabled.
+* "Witness fed asset" - Currently set to disabled & using a private price feed publisher list so that the 'hertz-feed' account is able to publish feeds without being a witness.
 
 ## Visualization
 
