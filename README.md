@@ -1,6 +1,6 @@
 # Norns
 
-The norns are three oscillating algorithm based assets on the BTS DEX. They are 120 degrees offset from one another and have an amplitude of 12.612612612% over a period of 28 days.
+The norns are three oscillating algorithm based assets on the BTS DEX. They are 120 degrees offset from one another and have an amplitude of 5.303030303% over a period of 28 days.
 
 Check out the simulator spreadsheet to visualise the norns configuration.
 
