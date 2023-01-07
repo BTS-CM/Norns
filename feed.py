@@ -68,7 +68,7 @@ def publish_wyrd(block_param):
 	urthr.bitshares.publish_price_feed(
 		"URTHR",
 		urthr,
-		cer=urthr*0.8, # Setting in line with Wackou's price feed scripts
+		cer=urthr*0.95, # Setting in line with Wackou's price feed scripts
 		mssr=101,
 		mcr=105,
 		account="account_name"
@@ -77,7 +77,7 @@ def publish_wyrd(block_param):
 	verthandi.bitshares.publish_price_feed(
 		"VERTHANDI",
 		verthandi,
-		cer=verthandi*0.8, # Setting in line with Wackou's price feed scripts
+		cer=verthandi*0.95, # Setting in line with Wackou's price feed scripts
 		mssr=101,
 		mcr=105,
 		account="account_name"
@@ -86,7 +86,7 @@ def publish_wyrd(block_param):
 	skuld.bitshares.publish_price_feed(
 		"SKULD",
 		skuld,
-		cer=skuld*0.8, # Setting in line with Wackou's price feed scripts
+		cer=skuld*0.95, # Setting in line with Wackou's price feed scripts
 		mssr=101,
 		mcr=105,
 		account="account_name"
