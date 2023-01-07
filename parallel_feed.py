@@ -61,9 +61,9 @@ def multi_feed(target_name, phase_offset, past_value, past_timestamp):
 			target.bitshares.publish_price_feed(
 			  target_name,
 			  target,
-			  cer=target*0.8, # Setting in line with Wackou's price feed scripts
-			  mssr=110, # Min short squeeze ratio of 110%
-			  mcr=200, # Min 200% backing collateral
+			  cer=target*0.95,
+			  mssr=101, # Max short squeeze ratio of 101%
+			  mcr=105, # Min 105% backing collateral
 			  account="account_name" # Replace with your BTS price feed account name
 			)
 			print("Published " + target_name)

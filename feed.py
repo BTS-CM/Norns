@@ -69,8 +69,8 @@ def publish_wyrd(block_param):
 		"URTHR",
 		urthr,
 		cer=urthr*0.8, # Setting in line with Wackou's price feed scripts
-		mssr=110,
-		mcr=200,
+		mssr=101,
+		mcr=105,
 		account="account_name"
 	)
 
@@ -78,8 +78,8 @@ def publish_wyrd(block_param):
 		"VERTHANDI",
 		verthandi,
 		cer=verthandi*0.8, # Setting in line with Wackou's price feed scripts
-		mssr=110,
-		mcr=200,
+		mssr=101,
+		mcr=105,
 		account="account_name"
 	)
 
@@ -87,8 +87,8 @@ def publish_wyrd(block_param):
 		"SKULD",
 		skuld,
 		cer=skuld*0.8, # Setting in line with Wackou's price feed scripts
-		mssr=110,
-		mcr=200,
+		mssr=101,
+		mcr=105,
 		account="account_name"
 	)
 	print("completed feed")
